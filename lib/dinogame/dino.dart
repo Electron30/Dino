@@ -1,6 +1,6 @@
 
-import 'package:dino/dinogame.dart';
-import 'package:dino/ground.dart';
+import 'package:dino/dinogame/dinogame.dart';
+import 'package:dino/dinogame/ground.dart';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
@@ -23,11 +23,11 @@ class Dino extends SpriteAnimationComponent with HasGameRef<DinoGame>,CollisionC
   @override 
   Future<void> onLoad() async {
     final DinoGame game;
-    final image = await Flame.images.load("dino/dino_finally.png");
-    size = Vector2(60, 60);
+    final image = await Flame.images.load("dinoassets/dino/dino_finally.png");
+    size = Vector2(40, 40);
     position = Vector2(15, (gameRef.size.y - size.y)/2 -50);
     var dinoAnimation = SpriteAnimation.fromFrameData(image,
-    SpriteAnimationData.sequenced(amount: 3, stepTime: 0.1, textureSize: Vector2(88, 92)));
+    SpriteAnimationData.sequenced(amount: 3, stepTime: 0.1, textureSize: Vector2(66, 71)));
     animation = dinoAnimation;
     add(CircleHitbox());
     gameRef.pauseEngine();

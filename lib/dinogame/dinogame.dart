@@ -1,12 +1,12 @@
-import 'package:dino/cactusGroup.dart';
-import 'package:dino/cactusLarge.dart';
-import 'package:dino/cactusLarge1.dart';
-import 'package:dino/cactusSmall.dart';
-import 'package:dino/cactusSmall1.dart';
-import 'package:dino/cloud.dart';
-import 'package:dino/dino.dart';
+import 'package:dino/dinogame/cactusGroup.dart';
+import 'package:dino/dinogame/cactusLarge.dart';
+import 'package:dino/dinogame/cactusLarge1.dart';
+import 'package:dino/dinogame/cactusSmall.dart';
+import 'package:dino/dinogame/cactusSmall1.dart';
+import 'package:dino/dinogame/cloud.dart';
+import 'package:dino/dinogame/dino.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:dino/ground.dart';
+import 'package:dino/dinogame/ground.dart';
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
@@ -38,6 +38,7 @@ class DinoGame extends FlameGame with TapDetector,HasCollisionDetection{
     final regular = TextPaint(style: style);
     prefs = await SharedPreferences.getInstance();
     bool gamover = false;
+    
     addAll([
       _ground = Ground(),
       _dino = Dino(),

@@ -35,7 +35,7 @@ class GameOver extends StatelessWidget {
                 height: 30.0,
                 width: 40.0,
                 child: Image.asset(
-                  'assets/images/dino_gameover.png',
+                  'assets/images/dinoassets/dino_gameover.png',
                     fit: BoxFit.fitWidth
                   )
                 )

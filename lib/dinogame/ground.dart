@@ -1,4 +1,4 @@
-import 'package:dino/dinogame.dart';
+import 'package:dino/dinogame/dinogame.dart';
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
 import 'package:flame/parallax.dart';
@@ -8,7 +8,7 @@ class Ground extends ParallaxComponent<DinoGame> {
   
   @override
   Future<void> onLoad() async {
-    final image = await Flame.images.load('ground.png');
+    final image = await Flame.images.load('dino/ground.png');
     
 
     position = Vector2(0, -size.y/2 + 20);

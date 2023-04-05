@@ -1,6 +1,6 @@
 
 
-import 'package:dino/dinogame.dart';
+import 'package:dino/dinogame/dinogame.dart';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
@@ -14,7 +14,7 @@ class Cloud extends SpriteComponent with HasGameRef {
   @override
   Future<void> onLoad() async {
 
-    final image = await Flame.images.load("cloud.png");
+    final image = await Flame.images.load("dinoassets/cloud.png");
     position = Vector2(0, (gameRef.size.y - size.y)/2 -200);
     final first_position = position;
     size = Vector2(100, 40);

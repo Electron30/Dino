@@ -1,4 +1,4 @@
-import 'package:dino/dinogame.dart';
+import 'package:dino/dinogame/dinogame.dart';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
@@ -11,7 +11,7 @@ class CactusSmall extends SpriteComponent with HasGameRef {
   @override
   Future<void> onLoad() async {
 
-    final image = await Flame.images.load("cacti/cacti_small_1.png");
+    final image = await Flame.images.load("dinoassets/cacti/cacti_small_1.png");
     position = Vector2(gameRef.size.x + 1200, (gameRef.size.y - size.y) / 2 - 40);
     final first_position = position;
     size = Vector2(40, 60);

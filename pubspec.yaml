@@ -40,6 +40,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  get: ^4.6.5
   shared_preferences:
 
   
@@ -64,18 +65,26 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
-    - assets/images/dino/
-    - assets/images/ground.png
-    - assets/images/dino/dino_finally.png
-    - assets/images/cloud.png
-    - assets/images/cacti/cacti_group.png
-    - assets/images/cacti/cacti_large_1.png
-    - assets/images/cacti/cacti_large_2.png
-    - assets/images/cacti/cacti_small_1.png
-    - assets/images/cacti/cacti_small_2.png
-    - assets/images/cacti/cacti_small_3.png
-    - assets/images/dino_gameover.png
-    - assets/images/dino/dino_1.png   
+    - assets/images/dinoassets/
+    - assets/images/dinoassets/dino/
+    - assets/images/dinoassets/ground.png
+    - assets/images/dinoassets/dino/dino_finally.png
+    - assets/images/dinoassets/cloud.png
+    - assets/images/dinoassets/cacti/cacti_group.png
+    - assets/images/dinoassets/cacti/cacti_large_1.png
+    - assets/images/dinoassets/cacti/cacti_large_2.png
+    - assets/images/dinoassets/cacti/cacti_small_1.png
+    - assets/images/dinoassets/cacti/cacti_small_2.png
+    - assets/images/dinoassets/cacti/cacti_small_3.png
+    - assets/images/dinoassets/dino_gameover.png
+    - assets/images/dinoassets/dino/dino_1.png 
+    - assets/images/pexels-lucie-liz-3165335.jpg 
+    - assets/images/istockphoto-1207017851-612x612.jpg 
+    - assets/images/space-game-background-neon-night-alien-landscape_107791-1624.avif
+    - assets/images/schulte.png
+    - assets/images/tictactoe.png
+    - assets/images/snake.png
+    - assets/images/dino.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

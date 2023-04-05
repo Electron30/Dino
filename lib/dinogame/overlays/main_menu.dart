@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-
+import 'package:dino/main.dart';
 import '../dinogame.dart';
 
 class MainMenu extends StatelessWidget {
   // Reference to parent game.
   final DinoGame game;
   const MainMenu({super.key, required this.game});
-  
+  void returnToMain(){
+    runApp(const CuatroMainMenu());
+  }
   @override
   Widget build(BuildContext context) {
     const backGroundColor = Color.fromRGBO(200, 200, 200, 1);
@@ -35,7 +37,7 @@ class MainMenu extends StatelessWidget {
                 height: 30.0,
                 width: 40.0,
                 child: Image.asset(
-                  'assets/images/dino/dino_6.png',
+                  'assets/images/dinoassets/dino/dino_6.png',
                     fit: BoxFit.fitWidth
                   )
                 )
@@ -53,6 +55,7 @@ class MainMenu extends StatelessWidget {
                     game.reset();
                     game.resumeEngine();
                     game.overlays.remove('MainMenu');
+                    
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: whiteTextColor,
@@ -78,6 +81,7 @@ class MainMenu extends StatelessWidget {
                     game.reset();
                     game.resumeEngine();
                     game.overlays.remove('MainMenu');
+                    runApp(MainMenu(game: game));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: whiteTextColor,
