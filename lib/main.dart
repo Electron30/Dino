@@ -138,7 +138,7 @@ class CuatroMainMenu extends StatelessWidget {
                                     
                                       image: DecorationImage(
                                           image: AssetImage(
-                                              "assets/images/dino/dino_6.png")),
+                                              "assets/images/dino.png")),
                                       borderRadius: BorderRadius.circular(8)),
                                       
                                 ),
