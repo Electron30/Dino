@@ -1,4 +1,5 @@
 import 'package:dino/dinogame/dinogame.dart';
+import 'package:dino/tictactoe/main.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'dinogame/overlays/game_over.dart';
@@ -25,6 +26,10 @@ void runDino() {
 void runSchulte() {
   runApp(const schulteGame());
   
+}
+
+void runTictactoe(){
+  runApp(const TictactoeGame());
 }
 
 final ButtonStyle dinoGameButtonStyle = ElevatedButton.styleFrom(
@@ -188,7 +193,7 @@ class CuatroMainMenu extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
-                          onPressed: () => runDino(),
+                          onPressed: () => runTictactoe(),
                           style: tictactoeGameButtonStyle,
                           child: Column(
                             children: [
